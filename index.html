@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Student Manager</div>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#students">Студенты</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome" id="home">
+            <h1>Управление студентами</h1>
+            <p>Добавляйте студентов и просматривайте список группы</p>
+        </section>
+
+        <section class="form-block">
+            <h2>Добавить студента</h2>
+
+            <form>
+                <div class="field">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="field">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" placeholder="Введите фамилию">
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+                <div class="field">
+                    <label for="group">Группа</label>
+                    <input type="text" id="group" placeholder="Например, IT-24">
+                </div>
+
+                <div class="field">
+                    <label for="age">Возраст</label>
+                    <input type="number" id="age" placeholder="Введите возраст">
+                </div>
+
+                <button type="submit">Добавить студента</button>
+            </form>
+        </section>
+
+        <section class="students" id="students">
+            <h2>Список студентов</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Email</th>
+                        <th>Группа</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Арман</td>
+                        <td>Алиев</td>
+                        <td>arman@mail.com</td>
+                        <td>IT-24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Данияр</td>
+                        <td>Садыков</td>
+                        <td>daniyar@mail.com</td>
+                        <td>IT-25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Алина</td>
+                        <td>Иванова</td>
+                        <td>alina@mail.com</td>
+                        <td>IT-24</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Тимур</td>
+                        <td>Ахметов</td>
+                        <td>timur@mail.com</td>
+                        <td>IT-26</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Диана</td>
+                        <td>Ким</td>
+                        <td>diana@mail.com</td>
+                        <td>IT-25</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Азамат</td>
+                        <td>Нуров</td>
+                        <td>azamat@mail.com</td>
+                        <td>IT-24</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Мадина</td>
+                        <td>Омарова</td>
+                        <td>madina@mail.com</td>
+                        <td>IT-26</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Ерлан</td>
+                        <td>Беков</td>
+                        <td>erlan@mail.com</td>
+                        <td>IT-25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="about" id="about">
+            <h2>О проекте</h2>
+            <p>Student Manager — веб-страница для хранения и просмотра информации о студентах.</p>
+            <a href="#students">Подробнее</a>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p>Email: studentmanager@mail.com</p>
+        </section>
+    </main>
+
+</body>
+</html>

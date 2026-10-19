@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263b63;
+    color: white;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a9c8ff;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #263b63;
+}
+
+.welcome p {
+    font-size: 16px;
+}
+
+.form-block,
+.students,
+.about,
+.contacts {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #263b63;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3468b5;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3468b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #263b63;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3468b5;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf2fa;
+}
+
+tbody tr:hover {
+    background-color: #dce8fa;
+}
+
+.about a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3468b5;
+}
+
+.about a:hover {
+    color: #263b63;
+}
+
+.contacts p {
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .students {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
